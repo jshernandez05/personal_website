@@ -1,0 +1,542 @@
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="{% static 'home/main.css' %}" /> 
+		<link rel="stylesheet" type="text/css" href="{% static 'home/timeline.css' %}"/>
+		<noscript><link rel="stylesheet" type="text/css" href="{% static 'home/noscript.css' %}" /></noscript>
+        <title>Joseph Hernandez</title>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- allow flash messages across all pages -->
+				{% if messages %}
+					{% for message in messages  %}
+					<div class="alert alert-{{ message.tags }} msg fade show" role="alert">
+						{{ message }}
+					</div>
+					{% endfor %}
+				{% endif %}
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon solid fa-database"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Joseph Hernandez</h1>
+								<H3>Data Engineer | Data Scientist</H3>
+								<ul class="icons">
+									<li><a href="https://linkedin.com/in/jshernandez05/" class="icon brands fab fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:jshernandez05@gmail.com" target="_blank" class="icon fa-solid fa-envelope"><span class="label">jshernandez05@gmail.com</span></a></li>
+									<li><a href="https://github.com/jshernandez05" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro"><b>Intro</b></a></li> 
+								<li><a href="#experience"><b>Experience</b></a></li>
+								<li><a href="static/home/documents/resume.pdf" target="_blank"><b>Resume</b></a></li>
+								<li><a href="#education"><b>Education</b></a></li>
+								<li><a href="#projects"><b>Projects</b></a></li>
+								<li><a href="#contact"><b>Contact</b></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<center><span class="circular-portrait"><img src="{% static 'home/images/Headshot.jpg' %}" alt="" /></span></center>
+								<p>Hello! I am Joseph, a Data Professional and Military Veteran with 24 years of 
+								experience in supply chain analytics and information technology. I am a technical 
+								problem solver with comprehensive knowledge in database systems, system 
+								administration, leadership, and project management. I am a self starter who quickly 
+								grasps and adapts to new concepts, technologies, and settings.</p>
+							</article>
+
+						<!-- Experience -->
+							<article id="experience">
+								<div class="row example-centered">
+									<div class="col-md-12 example-title">
+										<h2>Experience</h2>
+									</div>
+									<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+										<ul class="timeline timeline-centered">
+											<li class="timeline-item">
+												<div class="timeline-info">
+													<span>August 2018 - Present</span>
+													<!-- <div class="timeline-sub-info">
+														 Naval Information Warfare Center<br>San Diego, CA
+													</div> -->
+												</div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h3 class="timeline-title">Database & System<br>Administrator</h3>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-info">
+													<span>April 2015 - August 2018</span>
+												</div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h3 class="timeline-title">Supply Chain<br>Data Analyst</h3>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-info">
+													<span>March 2013 - April 2015</span>
+												</div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h3 class="timeline-title">Air Logistics<br>Cost Analyst</h3>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-info">
+													<span>April 2011 - March 2013</span>
+												</div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h3 class="timeline-title">Senior Logistics Manager</h3>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-info">
+													<span>January 2010 - April 2011</span>
+												</div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h3 class="timeline-title">Container Management Officer</h3>
+												</div>
+											</li>
+											<li class="timeline-item">
+												<div class="timeline-info">
+													<span>May 2008 - January 2010</span>
+												</div>
+												<div class="timeline-marker"></div>
+												<div class="timeline-content">
+													<h3 class="timeline-title">Senior Logistics Manager</h3>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="align-center">
+									<a href="{% static 'home/documents/resume.pdf' %}" class="button primary" target="_blank" >Resume</a>
+								</div>
+							</article>
+
+						<!-- Education -->
+							<article id="education">
+								<h2 class="responsive">Education / Certifications</h2>
+								<h3><b>Education</b></h3>
+									<ul class="alt">
+										<div class="parent">
+											<li><b>Master of Science, Data Science</b>  |  Eastern University, St. Davids, PA</li>
+												Conentration: Machine Learning<br>
+												 <div class="child">Graduation: 2023 (June)</div>
+												 <div class="child">
+													<small>
+														<a class="view-muted align-right"  href="{% static 'home/images/Coming-Soon-document.jpg' %}"
+														   onclick="open_doc('static/home/images/Coming-Soon-document.jpg','_blank'); return false;" >View Diploma</a>
+													</small>
+												</div>
+										</div>
+										<div class="parent">		
+											<li><b>Bachelor of Science, Accounting</b>  |   University of Maryland, Global Campus</li>
+												Minor: Business Administration<br>
+												<div class="child">Graduation: 2022</div>
+												<div class="child">
+													<small>
+														<a class="view-muted align-right"  href="{% static 'home/documents/UMGC.pdf' %}" 
+														   onclick="open_doc('static/home/documents/UMGC.pdf','_blank'); return false;">View Diploma</a>
+													</small>
+												</div>
+												
+											</div>	
+											<li></li>
+									<h3><b>Certifications</b></h3>
+											<div class="parent">
+												<li><b>Google Data Analytics Professional</b>  |  Coursera</li>
+													<div class="child">Completion: July 2022</div>
+													<div class="child">
+														<small>
+															<a class="view-muted align-right"  href="{% static 'home/documents/GoogleDataAnalyticsCertificate.pdf' %}" 
+															onclick="open_doc('static/home/documents/GoogleDataAnalyticsCertificate.pdf', '_blank'); return false;">View Certificate</a>
+														</small>
+													</div>
+											</div>	
+											<div class="parent">
+												<li><b>CNSS-4012 Senior Systems Manager</b>  |  NSTISSC</li>
+													<div class="child">Completion: July 2018</div>
+													<div class="child">
+														<small>
+															<a class="view-muted align-right"  href="{% static 'home/images/Coming-Soon-document.jpg' %}" 
+															onclick="open_doc('static/home/images/Coming-Soon-document.jpg', '_blank'); return false;">View Certificate</a>
+														</small>
+													</div>
+											</div>
+											<div class="parent">
+												<li><b>CNSS-4015 System Certifiers</b>  |  NSTISSC</li>
+													<div class="child">Completion: July 2018</div>
+													<div class="child">
+														<small>
+															<a class="view-muted align-right"  href="{% static 'home/images/Coming-Soon-document.jpg' %}" 
+															onclick="open_doc('static/home/images/Coming-Soon-document.jpg', '_blank'); return false;">View Certificate</a>
+														</small>
+													</div>
+											</div>			
+									</ul>
+							</article>
+						
+
+						<!-- Projects -->
+							<article id="projects">
+								<h2 class="major">Projects</h2>
+								<ul class="alt">
+									
+									<li><h3><a href="https://github.com/jshernandez05/data-copier-live" target="_blank">Data Copier</a></h3>
+										<span><a href="https://github.com/jshernandez05/data-copier-live" target="_blank" style="border-bottom: none;">
+												<img class="proj-pic" src="{% static 'home/images/projects/DataCopier.jpg' %}"alt="">
+											</a>
+										</span>
+										<p>A simple data pipline to copy data contained in JSON files to a database (MySQL) and then to another 
+											database (Postgres). The goal was to learn to use airflow and docker containers to facilitate ETL/ELT
+											processes. 
+										</p>
+									</li>
+									<li><h3>Google Data Analytics Capstone</h3>
+										<span><a  href="{% static 'home/images/Coming-Soon-document.jpg' %}" target="_blank" style="border-bottom: none;">
+												<img class="proj-pic" src="{% static 'home/images/Coming-Soon-document.jpg' %}"alt="">
+											</a>
+										</span>
+										<p>This book will introduce you to various important concepts in the field of data science using R. 
+											We start by reading data from multiple sources, then move on to processing the data, extracting hidden patterns, 
+											building predictive and forecasting models, building a recommendation engine, and communicating to the user 
+											through stunning visualizations and dashboards. By the end of this book, you will have an understanding of 
+											some very important techniques in data science, be able to implement them using R, understand and interpret the outcomes, 
+											and know how they helps businesses make a decision.
+										</p>
+									</li>
+								</ul>
+							</article>
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#">
+									{% csrf_token %}
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											{{ form.name }}
+											<!-- <input type="text" name="name" id="name" /> -->
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											{{ form.email }}
+											<!-- <input type="text" name="email" id="email" /> -->
+										</div>
+										<div class="field">
+											<label for="subject">Subject</label>
+											{{ form.subject }}
+											<!-- <input type="text" name="subject" id="subject"/> -->
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											{{ form.message }}
+											<!-- <textarea name="message" id="message" rows="4"></textarea> -->
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="https://linkedin.com/in/jshernandez05/" class="icon brands fab fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:jshernandez05@gmail.com" target="_blank" class="icon fa-solid fa-envelope"><span class="label">jshernandez05@gmail.com</span></a></li>
+									<li><a href="https://github.com/jshernandez05" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; 2022 Joseph Hernandez. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+        <!-- Scripts -->
+		<script src="{% static 'home/js/jquery.min.js' %}"></script>
+		<script src="{% static 'home/js/browser.min.js' %}"></script>
+		<script src="{% static 'home/js/breakpoints.min.js' %}"></script>
+		<script src="{% static 'home/js/util.js' %}"></script>
+		<script src="{% static 'home/js/main.js' %}"></script>
+		<script src="{% static 'home/js/doc_modal.js' %}"></script>
+		<script src="{% static 'home/js/messages.js' %}"></script>
+
+	</body>
+</html>
